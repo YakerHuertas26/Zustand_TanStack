@@ -1,13 +1,8 @@
-import useStorePokemon from "../Store/ApiPokemon";
 
-const ListaPokemon = () => {
-    const {listaPokemon}=useStorePokemon();
+const ListaPokemon = ({pokemon,key}) => {
+
     return ( 
-        <ul>
-            {listaPokemon.results.map((element,index)=>
-                <li key={index}>{element.name}</li>
-            )}
-        </ul>
+            <span key={key}>{(pokemon.name)}</span>  
     );
 }
 
