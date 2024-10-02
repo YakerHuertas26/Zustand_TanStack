@@ -1,10 +1,17 @@
 
-import "./App.css";
-import Tanstack from "./components/Tanstack";
+import {QueryClient,QueryClientProvider} from '@tanstack/react-query';
+
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
+import Rutas from './Routes/Rutas';
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-      <Tanstack/>
+    <QueryClientProvider client={queryClient}>
+      <Rutas/>
+      <ReactQueryDevtools/>
+    </QueryClientProvider>
   );
 }
 

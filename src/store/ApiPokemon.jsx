@@ -7,8 +7,9 @@ const useStorePokemon = create((set)=>({
         const peticion= await fetch(enpoint);
         const datos= await peticion.json();
         set({listaPokemon:datos})
-        // para tanstack
+        // para tanstack para tener un error
         return datos;
+
         
     } 
 }));

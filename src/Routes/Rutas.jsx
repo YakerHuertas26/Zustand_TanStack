@@ -1,5 +1,5 @@
 import { BrowserRouter,Route,Routes } from "react-router-dom";
-import Home from "./Home";
+import Home from "../Pages/Home";
 
 
 const Rutas = () => {
@@ -10,7 +10,7 @@ const Rutas = () => {
             </Routes>
         </BrowserRouter>
 
-     );
+    );
 }
- 
+
 export default Rutas;
