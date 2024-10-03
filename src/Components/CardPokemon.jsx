@@ -1,4 +1,4 @@
-import ListaPokemon from "../B_Elements/ListaPokemon";
+import {ImagenPequeña, ImagenPokemon,ListaPokemon, NumeroPokemon } from "../B_Elements/ListaPokemon";
 import { ContenedorCard, Numero } from "../Styles/S_cardPokemon";
 import useStorePokemon from "../Store/ApiPokemon";
 
@@ -7,8 +7,10 @@ const CardPokemon = () => {
     return ( 
         listaPokemon.results.map((element,index)=>
             <ContenedorCard color="#37f5df" key={index}>
+                <NumeroPokemon color={'#f6fd1f'}/>
+                <ImagenPokemon/>
                 <ListaPokemon pokemon={element} />
-                <Numero color="#a6f42a">#1</Numero>
+                <ImagenPequeña/>
             </ContenedorCard>)
     );
 }

@@ -11,7 +11,7 @@ const ContenedorCard= styled.div`
     position: relative;
     overflow: hidden;
     &::before{
-        border: 3px solid ;
+        /* border: 3px solid ; */
         content: '';
         display: block;
         position: absolute;
@@ -23,10 +23,10 @@ const ContenedorCard= styled.div`
         left: 0;
         bottom: 0;
         margin: auto;
-        border-radius: 50%;
-        filter: blur(80px);
+        border-radius: 20%;
+        filter: blur(30px);
     }
-`
+`;
 const Numero= styled.span`
     border: 3px solid red;
     position: absolute;
@@ -34,5 +34,22 @@ const Numero= styled.span`
     right: 10px;
     color: ${(props=>props.color)};
     font-weight: 700;
+`;
+
+const Imagen=styled.figure`
+    /* border: 3px solid #FFF; */
+    display: flex;
+    img{
+        z-index: 10;
+        width: 100%;
+
+    };
 `
-export {ContenedorCard,Numero};
+const ImgPequeña= styled.img`
+    position: absolute;
+    width: 40px;
+    bottom: 10px;
+    right: 10px;
+    height: 40px;
+`
+export {ContenedorCard,Numero,Imagen,ImgPequeña};

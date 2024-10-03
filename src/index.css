@@ -12,9 +12,20 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1.6rem;
   color: #fff;
+
 }
 
 #root {
   display: flex;
   justify-content: center;
 }
+.conteiner{
+  border: 3px solid rgb(245, 245, 245) ;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+  padding: 30px;
+}
+
