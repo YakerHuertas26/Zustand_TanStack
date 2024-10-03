@@ -9,8 +9,6 @@ const useStorePokemon = create((set)=>({
         set({listaPokemon:datos})
         // para tanstack para tener un error
         return datos;
-
-        
     } 
 }));
 

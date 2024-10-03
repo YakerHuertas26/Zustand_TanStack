@@ -19,7 +19,8 @@ const Home = () => {
 
     return ( 
         <div className="conteiner">
-            <HomeLayouts/>
+            {/* <HomeLayouts/> */}
+            <h2>home</h2>
         </div>
     );
 }
