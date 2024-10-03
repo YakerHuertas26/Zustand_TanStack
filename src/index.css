@@ -1,18 +1,7 @@
-/* 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
+
 html{
   font-size: 62.5%;
-}
-body {
-  background: #000;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1.6rem;
-  color: #fff;
-
 }
 
 #root {
@@ -20,12 +9,12 @@ body {
   justify-content: center;
 }
 .conteiner{
-  border: 3px solid rgb(245, 245, 245) ;
+  /* border: 3px solid rgb(245, 245, 245) ; */
   display: flex;
-  gap: 40px;
+  gap: 10px;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
-  padding: 30px;
+  padding: 20px;
 }
- */
+

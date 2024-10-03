@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import useStorePokemon from "../Store/ApiPokemon";
 import HomeLayouts from "../Layouts/HomeLayouts";
+import HeaderLayouts from "../Layouts/HeaderLayouts";
 
 const Home = () => {
     const {mostrarPokemon}= useStorePokemon()
@@ -20,7 +21,7 @@ const Home = () => {
     return ( 
         <div className="conteiner">
             {/* <HomeLayouts/> */}
-            <h2>home</h2>
+            <HeaderLayouts/>
         </div>
     );
 }
