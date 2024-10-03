@@ -1,11 +1,14 @@
 import styled from "styled-components";
 
 const Input = styled.input`
-    width: 100%;
+    width: 80%;
     outline: none;
     background: none;
     border: 0;
     color:${props=>props.theme.text} ;
+    font-size: 1.6rem;
+    padding: 2px;
+    /* border: 2px solid red; */
 `;
 
 const ContenedorBusqueda=styled.div`
@@ -25,6 +28,7 @@ const ContenedorBusqueda=styled.div`
         width: 40%;
         padding: 5px;
         align-items: center;
+        justify-content: space-around;
         position: relative;
         border-radius: 10px;
     }

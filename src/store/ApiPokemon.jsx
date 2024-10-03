@@ -11,6 +11,7 @@ const useStorePokemon = create((set)=>({
         return datos
     },
 
+    // ***********BARRA BUSCAR pOKEMON ++++++
     // estados para buscar un pokemon
     datosPokemon:[],
     buscarPokemon: async (nombrePokemon)=>{
@@ -22,15 +23,20 @@ const useStorePokemon = create((set)=>({
                 throw new Error("pokemon no encontrado");
             }
             // por defecto
-            const datos= await consulta.json();
-            set({datosPokemon:datos})
-            set
+            const datosPokemon= await consulta.json();
+            set({datosPokemon:datosPokemon})
+            return datosPokemon
         } catch (error) {
             // si ocurre un error en la consulta
             set({datosPokemon:null})
             
         }
-    }
+    },
+
+    // estado para input buscar
+    nombrePokemon: "",
+    setNombrePokemon:(e)=>set({nombrePokemon:e}),
+    
 }));
 
 export default useStorePokemon;
