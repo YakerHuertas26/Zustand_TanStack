@@ -23,9 +23,9 @@ const useStorePokemon = create((set)=>({
                 throw new Error("pokemon no encontrado");
             }
             // por defecto
-            const datosPokemon= await consulta.json();
-            set({datosPokemon:datosPokemon})
-            return datosPokemon
+            const data= await consulta.json();
+            set({datosPokemon:data})
+            return data
         } catch (error) {
             // si ocurre un error en la consulta
             set({datosPokemon:null})

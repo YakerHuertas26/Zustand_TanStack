@@ -1,11 +1,11 @@
 import {BusquedaPokemon, ImagenesHeader} from "../Components/BusquedaPokemon";
 import { ContenedorBusqueda } from "../Styles/BuscarPokemonStyles";
-const HeaderLayouts = () => {
+const HeaderLayouts = ({refetch}) => {
     return ( 
         <>
         <ContenedorBusqueda>
             <ImagenesHeader/>
-            <BusquedaPokemon/>
+            <BusquedaPokemon refetch={refetch}/>
         </ContenedorBusqueda>
         </>
      );
